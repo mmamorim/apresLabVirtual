@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Laboratórios Virtuais Anima</title>
+
+  <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+  <meta name="author" content="Bartek Szopka" />
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+  <link href="./impress-demo.css" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+  <!--
+  For example this fallback message is only visible when there is `impress-not-supported` class on body.
+-->
+<div class="fallback-message">
+  <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+  <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress" data-autoplay="">
+
+  <div id="slide01" class="step" data-x="2000" data-y="1200" data-z="2500">
+    <p class="hint2">Use as setas do teclado para navegar</p>
+  </div>
+
+  <div id="slide02" class="step" data-x="450" data-y="450" data-z="100"></div>
+
+  <div id="slide03" class="step" data-x="2000" data-y="700" data-z="200"></div>
+
+  <div id="slide04" class="step" data-x="600" data-y="1580" data-z="50"></div>
+
+  <div id="slide05" class="step" data-x="1550" data-y="1680" data-z="220"></div>
+
+  <div id="slide06" class="step" data-x="2450" data-y="1600" data-z="100"></div>
+
+  <div id="slide07" class="step" data-x="3450" data-y="1650" data-z="250"></div>
+
+  <!-- <div id="slide05" class="step" data-x="600" data-y="1600" data-z="-300"></div> -->
+
+  <!-- <div id="slide06" class="step" data-x="1550" data-y="1650" data-z="400"></div> -->
+
+  <!-- <div id="slide07" class="step" data-x="1550" data-y="1450" data-z="-400"></div> -->
+
+
+  <div id="slideFundo" class="" data-x="0" data-y="0" data-z="0" data-scale="1">
+    <img src="./proposta01.png">
+  </div>
+
+
+</div>
+
+<div id="impress-toolbar"></div>
+
+<div class="hint">
+  <p>Use a spacebar or arrow keys to navigate. <br/>
+    Press 'P' to launch speaker console.
+  </p>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) {
+  document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
+</script>
+
+<script src="./impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
